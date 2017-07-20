@@ -23,12 +23,12 @@
       $html = file_get_html('https://www.kariera.gr/%CE%AD%CF%81%CE%B5%CF%85%CE%BD%CE%B1?q=%CE%BC%CE%B7%CF%87%CE%B1%CE%BD%CE%B9%CE%BA%CF%8C%CF%82&loc=%CE%91%CE%B8%CE%AE%CE%BD%CE%B1'); //Load page with sample search
       foreach($html->find('table.jobList_table h2') as $element){
         $item['title'] =  $element->plaintext."<br>";
-        $item['time'] = $element->nextsibling()->plaintext."<br>";
-        $item['body'] = $element->nextsibling(1)->nextsibling(1)->plaintext."<br>";
-        $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
         echo $item['title'];
+        $item['time'] = $element->nextsibling()->plaintext."<br>";
         echo $item['time'];
-        echo $item['body'];
+        //$item['body'] = $element->nextsibling(1)->nextsibling(1)->plaintext."<br>";
+        //echo $item['body'];
+        $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
         echo $item['link'];
       }
     }
@@ -36,18 +36,16 @@
       $html = file_get_html("https://www.kariera.gr/%CE%AD%CF%81%CE%B5%CF%85%CE%BD%CE%B1?q=%CE%BC%CE%B7%CF%87%CE%B1%CE%BD%CE%B9%CE%BA%CF%8C%CF%82&loc=%CE%91%CE%B8%CE%AE%CE%BD%CE%B1&pg=".$i); //Load page with sample search
       foreach($html->find('table.jobList_table h2') as $element){
         $item['title'] =  $element->plaintext."<br>";
-        $item['time'] = $element->nextsibling()->plaintext."<br>";
-        $item['body'] = $element->nextsibling(1)->nextsibling(1)->plaintext."<br>";
-        $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
         echo $item['title'];
+        $item['time'] = $element->nextsibling()->plaintext."<br>";
         echo $item['time'];
-        echo $item['body'];
+        //$item['body'] = $element->nextsibling(1)->nextsibling(1)->plaintext."<br>";
+        //echo $item['body'];
+        $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
         echo $item['link'];
       }
     }
   }
-  
-
   $html->clear(); 
   unset($html);
  ?>
