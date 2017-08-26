@@ -7,9 +7,12 @@
 body {
 	background-color: #0F6598;
 }
+.bodi {
+max-width: 700px;
+margin: auto;
+}
 header {
 	padding: 64px;
-	height: 150px;
 }
 
 
@@ -19,17 +22,25 @@ header {
 }
 
 .container {
+	padding-top: 15px;
 	width: 500px;
 	margin: auto;
 }
 
 #search {
-	width: 800px;
-	height: 100px;
+	width: 500px;
 	margin: auto;
 }
 
 form div {
-	padding: 20px;
+	padding: 5px;
 	display: inline-block;
+}
+
+input {
+	border-radius: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 30px;
+	width: 100%;
 }
