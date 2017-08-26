@@ -63,7 +63,7 @@ $url = "https://www.kariera.gr/%CE%AD%CF%81%CE%B5%CF%85%CE%BD%CE%B1?q=".$what."&
     echo "<div class='title'>".$item['title']."</div>";
     $item['time'] = $element->nextsibling()->plaintext."<br>";
     echo "<div class='time'>".$item['time']."</div>";
-    $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
+    $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->firstChild(1)->firstChild(1)->childNodes(1)->outertext()."<br>";
     echo "<div class='link'>".$item['link']."</div></div>";  
   }
 
@@ -74,7 +74,7 @@ $url = "https://www.kariera.gr/%CE%AD%CF%81%CE%B5%CF%85%CE%BD%CE%B1?q=".$what."&
       echo "<div class='title'>".$item['title']."</div>";
       $item['time'] = $element->nextsibling()->plaintext."<br>";
       echo "<div class='time'>".$item['time']."</div>";
-      $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->innertext()."<br>";
+      $item['link'] =  $element->nextsibling(1)->nextsibling(1)->nextsibling(1)->childnodes(0)->firstChild(1)->firstChild(1)->firstChild(1)->childNodes(1)->outertext()."<br>";
       echo "<div class='link'>".$item['link']."</div>";
     }
   }
