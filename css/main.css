@@ -5,7 +5,9 @@
 }
 
 body {
-	background-color: #0F6598;
+	background-color: linear-gradient(#0F6598,grey);
+	background: -moz-linear-gradient(#0F6598, grey); /* For Firefox 3.6 to 15 */
+	background-attachment: fixed;
 }
 .bodi {
 max-width: 700px;
