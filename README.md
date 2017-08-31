@@ -1,4 +1,7 @@
 # jobscrapper.gr
+
+![screen](http://url/to/img.png)
+
 A job listings crawler from greek websites
 
 This project is an atempt to learn about html scapping.
