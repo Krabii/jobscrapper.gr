@@ -1,6 +1,6 @@
 # jobscrapper.gr
 
-![screen](http://url/to/img.png)
+![screen](https://github.com/Krabii/jobscrapper.gr/blob/master/scrap.png)
 
 A job listings crawler from greek websites
 
